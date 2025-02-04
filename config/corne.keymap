@@ -9,16 +9,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
-};
-
-/ {
         conditional_layers {
                 compatible = "zmk,conditional-layers";
                 tri_layer {
@@ -26,6 +16,7 @@
                         then-layer = <3>;
                 };
         };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -45,28 +36,28 @@
 
                 left_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |     |     |     |     |     | BSPC |
-// | CTRL |  `  |  ~  |  _  |  -  |     |   |     |     |     |     |     |      |
-// | SHFT | "|" |  /  |     |     |     |   |     |     |     |     |     | ESC  |
+// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  !  |  @  |  #  |  $  |  %  | BSPC |
+// | SHFT |  `  |  ~  |  _  |  -  |     |   |     |     |     |     |     |      |
+// | CTRL | "|" |  /  |     |     |     |   |     |     |     |     |     | ESC  |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp TAB     &kp N1  &kp N2  &kp N3   &kp N4   &kp N5   &trans    &trans     &trans  &trans   &trans  &kp BSPC
-   &kp LCTRL   &kp GRAVE     &kp TILDE     &trans         &trans         &trans         &trans    &trans     &trans  &trans   &trans  &trans
-   &kp LSHFT   &kp PIPE      &kp BSLH      &trans         &trans         &trans         &trans    &trans     &trans  &trans   &trans  &kp ESC
+   &kp LSHFT   &kp GRAVE     &kp TILDE     &trans         &trans         &trans         &trans    &trans     &trans  &trans   &trans  &trans
+   &kp LCTRL   &kp PIPE      &kp BSLH      &trans         &trans         &trans         &trans    &trans     &trans  &trans   &trans  &kp ESC
                                            &kp LGUI       &mo 1          &kp SPACE      &kp RET   &mo 2      &kp RALT
                         >;
                 };
 
                 right_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |     |     |     |     |     |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-// | CTRL |     |     |     |     |     |   |  {  |  }  |  =  |  +  |  :  |  "   |
-// | SHFT |     |     |     |     |     |   |  [  |  ]  |  <  |  >  |  ?  | ESC  |
+// |  TAB |  ^  |  &  |  *  |  (  |  )  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
+// | SHFT |     |     |     |     |     |   |  {  |  }  |  =  |  +  |  :  |  "   |
+// | CTRL |     |     |     |     |     |   |  [  |  ]  |  <  |  >  |  ?  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE | ALT |
                         bindings = <
    &kp TAB   &trans &trans &trans   &trans &trans      &kp N6          &kp N7          &kp N8          &kp N9           &kp N0          &kp BSPC
-   &kp LCTRL &trans &trans &trans   &trans &trans      &kp LBRC        &kp RBRC        &trans          &kp PLUS         &trans          &trans
-   &kp LSHFT &trans &trans &trans   &trans &trans      &kp LBKT        &kp RBKT        &trans          &trans           &trans          &kp ESC
+   &kp LSHFT &trans &trans &trans   &trans &trans      &kp LBRC        &kp RBRC        &trans          &kp PLUS         &trans          &trans
+   &kp LCTRL &trans &trans &trans   &trans &trans      &kp LBKT        &kp RBKT        &trans          &trans           &trans          &kp ESC
                            &kp LGUI &mo 1  &kp SPACE   &kp RET         &mo 2           &kp RALT
                         >;
                 };
