@@ -55,7 +55,7 @@
 // | CTRL |     |     |     |     |     |   |     |     |     |     |     | RALT |
 //                    | GUI |CBLYR| SPC |   | ENT |     | BSCP|
                         bindings = <
-   &kp TAB     &kp GRAVE   &trans      &kp STAR    &trans       &trans      &trans    &trans    &trans    &trans       &trans      &kp ESC
+   &kp TAB     &kp GRAVE   &trans      &trans      &trans       &trans      &trans    &trans    &trans    &trans       &trans      &kp ESC
    &kp LSHFT   &kp BSLH    &kp EQUAL   &kp MINUS   &kp LBKT     &kp RBKT    &trans    &trans    &trans    &trans       &trans      &kp DEL
    &kp LCTRL   &trans      &trans      &trans      &trans       &trans      &trans    &trans    &trans    &trans       &trans      &kp RALT
                            &kp LGUI    &trans      &kp SPACE    &kp RET     &trans    &kp BSCP
