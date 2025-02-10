@@ -17,11 +17,6 @@
                 };
         };
 
-        &mt {
-                tapping-term-ms = <400>;
-        };
-
-
         keymap {
                 compatible = "zmk,keymap";
 
@@ -51,7 +46,7 @@
    &kp F1       &kp F2         &kp F3         &kp F4         &kp F5         &kp F6       &kp F7   &kp F8         &kp F9        &kp F10        &kp F11       &kp F12
    &kp TAB      &mt LALT N1    &mt LGUI N2    &mt LSHFT N3   &mt LCTRL N4   &kp N5       &kp N6   &mt RCTRL N7   &mt RGUI N8   &mt RSHFT N9   &mt RALT N0   &kp DEL
    &trans       &trans         &trans         &trans         &trans         &trans       &trans   &trans         &trans        &trans         &trans        &trans
-                                              &trans         &kp SPACE      &mo 2        &trans   &kp RET        &trans
+                                              &trans         &kp SPACE      &trans       &mo 2    &kp RET        &trans
                         >;
                 };
 
