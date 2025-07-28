@@ -59,7 +59,7 @@
                         bindings = <
    &kp TAB     &trans          &trans       &trans         &trans        &trans      &trans    &trans    &trans       &trans       &trans      &trans
    &trans      &kp GRAVE       &kp BSLH     &kp EQUAL      &kp MINUS     &kp LBKT    &kp RBKT  &trans    &trans       &trans       &trans      &kp RALT
-   &LSHFT      &trans          &trans       &trans         &trans        &trans      &trans    &trans    &trans       &trans       &trans      &trans
+   &kp LSHFT   &trans          &trans       &trans         &trans        &trans      &trans    &trans    &trans       &trans       &trans      &trans
                                &trans       &kp SPACE      &mo 1         &trans      &kp RET   &trans
                         >;
                 };
